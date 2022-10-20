@@ -1,0 +1,11 @@
+{
+    "cSpell.spellCheckOnlyWorkspaceFiles": true,
+    "cSpell.enabled": true,
+    "cSpell.language": "pt-BR,en-US",
+    "triggerTaskOnSave.on": false,
+    "triggerTaskOnSave.tasks": {
+        "build":[
+            "main.tex"
+        ],
+    }
+}
