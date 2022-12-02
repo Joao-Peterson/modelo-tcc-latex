@@ -16,7 +16,7 @@ SYNC_FILE = main.tex
 
 .PHONY : main.aux
 
-quick : main.aux sync
+quick : main.aux
 	@rm -f $(shell find . -name '*.aux')
 
 bib : main.bbl
