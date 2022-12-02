@@ -6,40 +6,34 @@
 % \includepdf{folhadeaprovacao_final.pdf}
 
 \begin{folhadeaprovacao}
+\DoubleSpacing
+\begin{center}
 
-  \begin{center}
-    {\ABNTEXchapterfont\normalsize\imprimirautor}
+	{\ABNTEXchapterfont\imprimirautor}
 
-    \vspace*{7.5cm}
+	\vfill
 
-    \begin{center}
-      \ABNTEXchapterfont\bfseries\normalsize\imprimirtitulo
-    \end{center}
-    
-    \vspace*{1cm}
-    
-    \hspace{.45\textwidth}
-    \begin{minipage}{.5\textwidth}
-        \imprimirpreambulo
-    \end{minipage}%
-    \vspace*{\fill}
-   \end{center}
-    
-    \vspace*{0.25cm}
-    
-    \begin{center}
-      \imprimirlocal ~(\estado), \Data :
-    \end{center}    
+	{\ABNTEXchapterfont\imprimirtitulo}
 
-    \vspace*{-0.5cm}
+	\vspace*{1cm}
 
-   \assinatura{\textbf{\imprimirorientador} \\ \nomeinstituicao}
-   \vspace*{\fill}
-   \begin{center}
-       \textbf{BANCA EXAMINADORA}
-   \end{center}
-   \vspace*{-1.5cm}
-   \assinatura{\textbf{\primeiroavaliador}\\ \primeiroavaliadorafiliacao}
-   \assinatura{\textbf{\segundoavaliador}\\ \segundoavaliadorafiliacao}
- 
+	\hspace{.45\textwidth}
+	\begin{minipage}{.5\textwidth}
+	\begin{SingleSpace}
+		\imprimirpreambulo
+	\end{SingleSpace}
+	\end{minipage}
+
+	\vspace*{1.5cm}
+	
+	\imprimirlocal ~(\estado), \Data :
+	
+	\assinatura{\textbf{\imprimirorientador} \\ \nomeinstituicao}
+	
+	\vspace*{1.5cm}
+	\textbf{BANCA EXAMINADORA}
+
+	\assinatura{\textbf{\primeiroavaliador}\\ \primeiroavaliadorafiliacao}
+	\assinatura{\textbf{\segundoavaliador}\\ \segundoavaliadorafiliacao}	
+\end{center}
 \end{folhadeaprovacao}

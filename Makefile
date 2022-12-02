@@ -16,14 +16,18 @@ SYNC_FILE = main.tex
 
 .PHONY : main.aux
 
-quick : main.aux
+quick : main.aux sync
+	@rm -f $(shell find . -name '*.aux')
 
-main.aux : main.tex sync
+bib : main.bbl
+
+main.aux : main.tex
 	$(TEX_CC) $(TEX_FLAGS) $<
 
 build : main.aux main.bbl
 	$(TEX_CC) $(TEX_FLAGS) $(basename $<).tex
 	$(TEX_CC) $(TEX_FLAGS) $(basename $<).tex
+	@rm -f $(shell find . -name '*.aux')
 
 main.bbl : main.aux
 	bibtex $(basename $@)

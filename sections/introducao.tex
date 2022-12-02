@@ -11,28 +11,30 @@ Consulte sua Secretaria ou Coordenação do seu Curso e o site do SIBI sobre os 
 Este \textit{template} foi elaborado no \LaTeX . Para gerar o sumário automático de acordo com a norma NBR 6027/2012 utilize a sequência abaixo para diferenciação gráfica nas divisões de seção e subseção.
 
 \begin{enumerate}[label=\alph*)]
-   \item para seção primária use $\backslash$chapter
-   \item para seção secundária use $\backslash$section
-   \item para seção terciária use $\backslash$subsection
-   \item para seção quaternária use $\backslash$subsubsection
-   \item para referência, utilize o aqruivo Bibliografia.bib que deve ser escrito no padrão bibtex. O arquivo deve ser compilado com o compilador bibtex e então o arquivo principal deve ser compilado para geração do arquivo PDF.
-   \item para citação com mais de 3 linhas, use o ambiente $\backslash$begin{citacao}  $\backslash${end{citacao}}
-   \item para notas de rodapé utilize $\backslash$footnote \footnote{As notas de rodapé possuem fonte tamanho 10. O alinhamento das linhas da nota de rodapé deve ser abaixo da primeira letra da primeira palavra da nota de modo dar destaque ao expoente.}
+   \item para seção primária use \texttt{\detokenize{\chapter}}
+   \item para seção secundária use \texttt{\detokenize{\section}}
+   \item para seção terciária use \texttt{\detokenize{\subsection}}
+   \item para seção quaternária use \texttt{\detokenize{\subsubsection}}
+   \item para referência, utilize o arquivo Bibliografia.bib que deve ser escrito no padrão bibtex. O arquivo deve ser compilado com o compilador bibtex e então o arquivo principal deve ser compilado para geração do arquivo PDF.
+\item para citação com mais de 3 linhas, use o ambiente \verb!\begin{citacao}! \verb!\end{citacao}!.
+   \item para notas de rodapé utilize\footnote{As notas de rodapé possuem fonte tamanho 10. O alinhamento das linhas da nota de rodapé deve ser abaixo da primeira letra da primeira palavra da nota de modo dar destaque ao expoente.}: \texttt{\detokenize{\footnote}}
 \end{enumerate}
 
+Exemplo de citação longa: 
+
 \begin{citacao}
-Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.
+Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longaExemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.Exemplo de citação longa.
 \end{citacao}
 
 \section{Objetivos}
 Nas seções abaixo estão descritos o objetivo geral e os objetivos específicos da pesquisa.
 
 Destaca-se que a utilização de subdivisões de seções na Introdução é um elemento opcional. Sugere-se seguir as orientações do curso. 
-\subsection{\textbf{Objetivo Geral}}
+\subsection{Objetivo Geral}
 Descrição.
 
 
-\subsection{\textbf{Objetivos Específicos}}
+\subsection{Objetivos Específicos}
 
 \begin{enumerate}[label=\alph*)]
     \item objetivo 1;

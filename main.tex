@@ -27,11 +27,11 @@
 % \coorientador{Prof. Msc. NOME} 							% nome do coorientador
 \def\primeiroavaliador{Prof. Msc. XXXXXXX}           		% primeiro avaliador
 \def\primeiroavaliadorafiliacao{							% instituição do primeiro avaliador
-	Universiade TAL/ Instituto TAL
+	Universidade TAL \\ Instituto TAL
 }           		
 \def\segundoavaliador{Prof. Dr. XXXXXX}              		% segundo avaliador
 \def\segundoavaliadorafiliacao{								% instituição do segundo avaliador
-	Universiade TAL/ Instituto TAL
+	Universidade TAL \\ Instituto TAL
 }           		
 \def\PalavrasChave{	                                 		% palavras chave para o resumo
 	palavra-chave; palavra-chave; palavra-chave.
@@ -44,12 +44,15 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{sections/capa}
+\input{sections/capa}
+\input{sections/folhaderosto}
 \makeindex
+
 \begin{document}
 \pretextual
 \imprimircapa
-\include{sections/folhaderosto}
+\imprimirfolhaderosto
+
 \include{sections/folhadeaprovacao}
 \include{sections/dedicatoria}
 \include{sections/agradecimentos}
@@ -58,16 +61,19 @@
 \include{sections/sumario}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \textual
-\pagestyle{simple}
+\pagestyle{simple-folio}                                                            % sem nome do capitulo no cabeçalho
 \include{sections/introducao}
-\include{sections/desenvolvimento}
+\include{sections/fundamentacao}
 \include{sections/metodologia}
+\include{sections/desenvolvimento}
 \include{sections/resultados}
 \include{sections/conclusao}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \postextual
 \addtocontents{toc}{\protect\vspace{-\cftbeforechapterskip}}						% Manter esse comando para o espaçamento correto nas referências
+% \citeoption{abnt-repeated-author-omit=yes}
 \bibliography{ref.bib}
+
 \include{sections/apendice}
 \include{sections/anexo}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

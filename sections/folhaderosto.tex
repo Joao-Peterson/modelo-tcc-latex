@@ -1,30 +1,25 @@
-\begin{folhadeaprovacao}
+\renewcommand{\folhaderostocontent}{
+\begin{center}
+	
+	{\ABNTEXchapterfont\imprimirautor}
 
-  \begin{center}
-    \textbf{{\ABNTEXchapterfont\normalsize\imprimirautor}}
+	\vfill
 
-    \vspace*{\fill}\vspace*{\fill}
-    \begin{center}
-      \ABNTEXchapterfont\bfseries\normalsize\imprimirtitulo
-    \end{center}
-    \vspace*{\fill}
-    
-    \hspace{.45\textwidth}
-    \begin{minipage}{.5\textwidth}
-        \imprimirpreambulo
-        
-        Orientador: \imprimirorientador
-    \end{minipage}%
-    \vspace*{\fill}
-   \end{center}
+	{\ABNTEXchapterfont\imprimirtitulo}
+	
+	\vfill
 
-      
-   \begin{center}
-    \vspace*{0.5cm}
-    {\large\imprimirlocal}
-    \par
-    {\large\imprimirdata}
-    \vspace*{1cm}
-  \end{center}
-  
-\end{folhadeaprovacao}
+	\hspace{.45\textwidth}
+	\begin{minipage}{.5\textwidth}
+	\begin{SingleSpace}
+		\imprimirpreambulo
+		Orientador: \imprimirorientador
+	\end{SingleSpace}
+	\end{minipage}
+	
+	\vfill
+	
+	\imprimirlocal \\
+	\imprimirdata
+\end{center}  
+}
